@@ -7,9 +7,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-
+    
 
     <body>
+
+        <div id="backtotop"><a href="#first-page">
+            <button id="myBtn" title="Go to top">↑</button></a>
+        </div>
         <div id="background">
             <video autoplay muted loop id="myVideo">
                 <source src="img/forest.mp4" type="video/mp4">
@@ -22,8 +26,8 @@
             <div id="logo"><img id="icon" src="img/logo.png" alt="Company logo"></div>
             <div id="links">
                 <div class="link"><a class="navlink" href="#info">Our projects</a></div>
-                <div class="link">Contact</div>
-                <div class="link">Support us!</div>
+                <div class="link"><a class="navlink" href="#quote">Quote</a></div>
+                <div class="link"><a class="navlink" href="#signin">Support us!</a></div>
             </div>
         </div>
 
@@ -49,21 +53,21 @@
 <!-- pictures for projects-->
             <div id="infopictures">
                     <div class="projects">
-                     <img src="img/lectures.jpg">
+                     <img class="projectimg" src="img/lectures.jpg">
                      <p class="shorts">Our team provides lectures to show effects of global warming!</p>
 
                     </div>
                     <div class="projects">
-                        <img src="img/planting.jpg">
+                        <img class="projectimg" src="img/planting.jpg">
                         <p class="shorts">We already planted over 10,000 trees all over the world!</p>
                     </div>
                     <div class="projects">
-                        <img src="img/polarbear.jpg">
+                        <img class="projectimg" class="projectimg" src="img/polarbear.jpg">
                         <p class="shorts">Endangered species are our main topic of researches!</p>
 
                     </div>
                     <div class="projects">
-                        <img src="img/rainforest.jpg">
+                        <img class="projectimg" src="img/rainforest.jpg">
                         <p class="shorts">We fight together to avoid cutting of rainforest for palm oil plantations!</p>
                     </div>
             </div>
@@ -71,9 +75,26 @@
         </div>
 
 <!-- Below one small inspiring quote-->
-        <div id="quote"></div>
+        <div id="quote">
+            <div id="quote-text">Preserve and cherish the pale blue dot, 
+                the only home we've ever known.</div>
+            <div id="author">- Carl Sagan, astronomer</div>
+        </div>
 
-        <div id="signin"></div>
-        <div id="footer"></div>
+<!-- Information about signing in to our project-->
+        <div id="signin">
+            <div id="box">
+                <div id="text">
+                    <div id="textup">Are you ready to join?</div>
+                    <div id="textdown">Sign up to support our important mission</div>
+                </div>
+                <div id="button-down">  <button class="signin2">Sign In!</button></div>
+            </div>
+        </div>
+
+<!--footer decoration-->
+        <div id="footer"><p>Copyright &#169; Dariusz Kozlowski 2022</p></div>
+
+        
     </body>
 </html>

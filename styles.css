@@ -17,7 +17,7 @@ body
     left: 0;
     top: 0;
     width: 100%;
-    background-color: darkgreen;
+    background-color: rgb(2, 77, 2);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -130,7 +130,7 @@ p.descriptive
     border: solid 3px rgb(14, 51, 1);
 }
 
-.signin:hover
+.signin:hover, .signin2:hover
 {
     opacity:0.8;
 }
@@ -190,7 +190,7 @@ p.descriptive
  
 }
 
-img
+.projectimg
 {
     max-width: 100%;
     max-height: 75%;
@@ -199,9 +199,10 @@ img
     border:solid green;
 }
 
-img:hover
+.projectimg:hover
 {
     opacity:0.9;
+    transform: scale(1.05);
 }
 .shorts
 {
@@ -213,3 +214,160 @@ img:hover
     text-decoration: none;
     color: white;
 }
+.navlink:hover
+{
+    opacity: 0.7;
+   
+}
+
+
+
+
+/* Styling of quote element and sub-elements */
+#quote
+{
+  
+    position:absolute;
+    top:200%;
+    left:0;
+    width:100%;
+    height:55%;
+    background-color: rgb(76, 150, 51);
+    display:flex;
+    flex-direction: column;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#quote-text
+{
+    font-style: italic;
+    font-size:calc(12px + 2.5vw);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+#author
+{
+   justify-self: end;
+   align-self: flex-end;
+   font-size:calc(8px + 1.5vw);
+   margin-right: 10vw;
+}
+
+
+
+/*styling of signing in element*/
+
+
+#signin
+{
+  
+    position:absolute;
+    top:255%;
+    left:0;
+    width:100%;
+    height:35%;
+    background-color: rgb(36, 114, 10);
+    display:flex;
+    flex-direction: column;
+   flex-wrap: wrap;
+    align-items: center;
+   justify-items: center;
+   justify-content: center;
+    color: white;
+}
+
+#box
+{
+    background-color: rgb(2, 77, 2);
+    height: 50%;
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:1200px
+}
+
+#text
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#textup
+{
+    font-weight: 700;
+    font-size: calc(8px + 1.5vw);
+}
+
+#textdown
+{
+    font-size:calc(8px + 1vw);
+}
+#button-down
+{
+    width: 25%;
+}
+/*Sttyling the footer element*/
+#footer
+{
+  
+    position:absolute;
+    top:290%;
+    left:0;
+    width:100%;
+    height:10%;
+    background-color: rgb(2, 77, 2);
+    display:flex;
+    flex-direction: column;
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    color: white;
+}
+
+
+.signin2
+{
+    padding: 10px;
+    background-color: rgb(36, 122, 7);
+    color: aliceblue;
+    font-weight: 700;
+    font-size: calc(8px + 1vw);
+    border-radius: 10%;
+    border: solid 3px rgb(14, 51, 1);
+}
+
+/*button back to top*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #3e363f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 800;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
