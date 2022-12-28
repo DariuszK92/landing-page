@@ -371,3 +371,8 @@ p.descriptive
   #myBtn:hover {
     background-color: #555;
   }
+
+  .signin2:hover, .signin:hover
+  {
+    cursor:pointer;
+  }
